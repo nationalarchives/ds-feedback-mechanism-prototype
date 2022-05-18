@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+{% block content %}
+
+    <form action="{{ url_for('process_feedback') }}">
+
+        <fieldset>
+            <legend>{{ content.ratings_legend }}</legend>
+
+            {% for item in form.ratings %}
+                <label class="radio">
+                    {{ item }}
+                    {{ item.label }}
+                </label>
+            {% endfor %}
+        </fieldset>
+        <fieldset>
+            <legend>{{ content.comment_legend }}</legend>
+            {{ form.comment.label }}
+            {{ form.comment }}
+        </fieldset>
+        <input type="hidden" name="originating_page_url" value="{{ request.url }}">
+        <input type="submit" value="{{ content.submit_button_text }}">
+    </form>
+
+{% endblock %}
