@@ -19,6 +19,7 @@
             {{ form.comment }}
         </fieldset>
         <input type="hidden" name="originating_page_url" value="{{ request.url }}">
+        {{ form.csrf_token }}
         <input type="submit" value="{{ content.submit_button_text }}">
     </form>
 
