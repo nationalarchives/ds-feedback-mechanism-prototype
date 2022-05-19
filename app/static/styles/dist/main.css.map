@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"main.css"}
+{"version":3,"sourceRoot":"","sources":["../src/sass/includes/_fake-page.scss","../src/sass/includes/_main-content.scss"],"names":[],"mappings":"AAAA;EACE;;;AAGF;EACE;;;ACLF;EACE","file":"main.css"}
