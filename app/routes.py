@@ -2,6 +2,7 @@ from app import app
 from app.content_managed_content.content import content
 from app.forms.server_rendered_form import ServerRenderedForm
 from flask import render_template, request, redirect, url_for
+import random
 
 
 @app.route('/')
@@ -21,7 +22,7 @@ def home():
 @app.route('/process_feedback')
 def process_feedback():
     # Set this variable to True or False to represent success or failure states
-    processed_successfully = True
+    processed_successfully = random.choice([True, False])
 
     if processed_successfully:
         return redirect(f'{url_for("home")}?submission=success#feedback-mechanism-processed-message')
