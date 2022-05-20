@@ -2,22 +2,26 @@
 
 {% block content %}
 
-    {% if submission == None %}
+    <div class="container">
 
-        {% include 'includes/server_rendered_feedback_component.html' %}
 
-    {% endif %}
+        {% if submission == None %}
 
-    {% if submission == 'success' %}
+            {% include 'includes/server_rendered_feedback_component.html' %}
 
-        {% include 'includes/server_rendered_success_message.html' %}
+        {% endif %}
 
-    {% endif %}
+        {% if submission == 'success' %}
 
-    {% if submission == 'failure' %}
+            {% include 'includes/server_rendered_success_message.html' %}
 
-        {% include 'includes/server_rendered_failure_message.html' %}
+        {% endif %}
 
-    {% endif %}
+        {% if submission == 'failure' %}
 
+            {% include 'includes/server_rendered_failure_message.html' %}
+
+        {% endif %}
+
+    </div>
 {% endblock %}

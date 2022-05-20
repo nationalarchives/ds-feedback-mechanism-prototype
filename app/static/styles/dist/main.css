@@ -1,5 +1,61 @@
-:root {
-  scroll-behavior: smooth;
+.feedback-mechanism {
+  padding: 2rem;
+  border: 1px solid #dedede;
+}
+.feedback-mechanism__heading {
+  display: inline-block;
+  margin-top: 0;
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px dotted #FFCC00;
+}
+.feedback-mechanism__helper-text {
+  display: block;
+}
+.feedback-mechanism__legend {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.feedback-mechanism__label {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.feedback-mechanism__comment-field {
+  resize: none;
+  width: 70%;
+  padding: 0.5rem;
+  border: 2px solid #888;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+.feedback-mechanism__submit-button {
+  text-decoration: none;
+  background-color: #134571;
+  font-weight: 700;
+  border: 0;
+  color: #fff;
+  padding: 1em 1.3em;
+  margin-top: 1em;
+}
+
+.feedback-message {
+  padding: 2rem;
+}
+.feedback-message h2 {
+  margin-top: 0;
+}
+.feedback-message p {
+  margin-bottom: 0;
+}
+.feedback-message a, .feedback-message a:visited, .feedback-message a:hover a:active {
+  color: black;
+}
+.feedback-message--failure {
+  background-color: #d4351c;
+  color: #fff;
+}
+.feedback-message--success {
+  background-color: #c2f4a6;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -4,10 +4,9 @@ content = {
     'feedback_mechanism_success_message_text': "Your feedback has been received. If you'd like to provide more feedback please consider filling out <a href='#'>a short survey</a>.",
     'feedback_mechanism_failure_message_heading': 'There has been an error',
     'feedback_mechanism_failure_message_text': "Our team have been notified and are looking into it.",
-    'comment_field_label': 'Comment',
+    'comment_field_label': 'Leave a comment (optional)',
     'comment_field_helper_text': 'Please do not include any personally identifiable information such as your name, address or email address.',
     'ratings_legend': 'How would you rate this content?',
-    'comment_legend': 'Leave a comment (optional)',
     'ratings': [
         ('positive', 'I enjoyed it'),
         ('negative', 'Not for me')

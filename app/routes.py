@@ -21,7 +21,7 @@ def home():
 @app.route('/process_feedback')
 def process_feedback():
     # Set this variable to True or False to represent success or failure states
-    processed_successfully = False
+    processed_successfully = True
 
     if processed_successfully:
         return redirect(f'{url_for("home")}?submission=success#feedback-mechanism-processed-message')
