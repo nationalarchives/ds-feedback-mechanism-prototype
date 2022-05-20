@@ -1,11 +1,3 @@
-.fake-page {
-  min-height: 90vh;
-}
-
-.fake-footer {
-  min-height: 90vh;
-}
-
 :root {
   scroll-behavior: smooth;
 }

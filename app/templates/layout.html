@@ -2,12 +2,256 @@
 <html lang="en">
 {% include 'includes/head.html' %}
 <body>
+<header class="header">
+    <div class="header__logo-holder">
+        <a href="https://ds-etna-search.herokuapp.com/" class="header__logo-link"><img
+                src="{{ url_for('static', filename='images/tna-square-white-logo.svg') }}" class="header__logo-image"
+                alt="The National Archives logo"></a>
+    </div>
+    <nav class="header__nav">
+        <ul class="header__nav-list">
+            <li class="header__nav-list-item">
+                <a class="header__nav-list-item-link" href="https://ds-etna-search.herokuapp.com/explore">Explore</a>
+            </li>
+            <li class="header__nav-list-item">
+                <a class="header__nav-list-item-link"
+                   href="https://ds-etna-search.herokuapp.com/search/catalogue/?collection=HO#">What's on</a>
+            </li>
+            <li class="header__nav-list-item">
+                <a class="header__nav-list-item-link"
+                   href="https://ds-etna-search.herokuapp.com/search/catalogue/?collection=HO#">Visit</a>
+            </li>
+            <li class="header__nav-list-item">
+                <a class="header__nav-list-item-link"
+                   href="https://ds-etna-search.herokuapp.com/search/catalogue/?collection=HO#">Learn</a>
+            </li>
+            <li class="header__nav-list-item">
+
+                <a class="header__nav-list-item-link header__nav-list-item-link-search"
+                   href="https://ds-etna-search.herokuapp.com/search" aria-current="true">
+                    <span class="sr-only">Search</span></a>
+            </li>
+        </ul>
+    </nav>
+</header>
 <main id="main-content">
-    {% include 'includes/fake_page.html' %}
+
+    <section class="py-3 px-5 container-fluid" id="navigation">
+        <div class="back-to-search">
+            <p><span><</span><a href="#">Back to search results</a></p>
+        </div>
+        <div class="next-previous">
+            <ul>
+                <li><span><</span> <a href="#">DSIR 27/6/ADM170</a></li>
+                <li>DSIR 27/6/ADM171</li>
+                <li><a href="#">DSIR 27/6/ADM172</a> <span>></span></li>
+            </ul>
+        </div>
+
+    </section>
+
+    <section class="container" id="page">
+        <div class="row pb-lg-3" id="record-description">
+            <div class="col-md-7">
+                <h3>Information about this record</h3></a>
+                <h1 class="fw-light">The pressures produced by explosions underwater of 1-oz. solid cone charges of P.E.
+                    By...</h1>
+            </div>
+            <div class="col-md-5">
+                <div class="p-3">
+                    <div class="hierarchy_short">
+                        <h4>Where this record is in the collection</h4>
+                        <ul>
+                            <li><span class="type"><a href="">Department</a></span> DSIR</li>
+                            <li><span class="type"><a href="">Series</a></span> DSIR 27</li>
+                            <li><span class="type this">This item</span> DSIR 27/6/ADM171</li>
+                        </ul>
+                        <p style="margin: 0; display: inline; text-align:right;"><a href="#hierarchy"><img
+                                src="/static/images/chevron-down-black.svg" alt="" style="margin-right: 0.5rem;">Scroll
+                            to full hierarchy</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mb-5" id="page">
+        <div class="row py-lg-3">
+            <div class="col-md-12">
+                <table class="table table-striped">
+                    <tbody>
+                    <tr>
+                        <th scope="row">Reference:</th>
+                        <td>
+                            DSIR 27/6/ADM171
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <th scope="row">Description:</th>
+                        <td id="annotationcontentdescription">
+                            <p class="scopecontent">The pressures produced by explosions underwater of 1-oz. solid cone
+                                charges of
+                                P.E. By G. Charlesworth</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Note:</th>
+                        <td>
+                            U
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Date:</th>
+                        <td>
+                            Mar 1944
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Held by:</th>
+                        <td>
+                            <a href="/details/a/A13530124" target="_blank">The National Archives, Kew</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Former reference in The National Archives:</th>
+                        <td>DSIR 27/6/ADM 171</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Legal status:</th>
+                        <td>
+                            Public Record(s)
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Closure status:</th>
+                        <td>
+                            Open Document, Open Description
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <h3>This record is within the series</h3>
+        <div class="card shadow-sm series-panel">
+            <div class="card-body">
+                <h5 class="card-title"><small
+                        style="font-size: 1rem; font-weight: normal; margin-bottom: 0.5rem; display: inline-block;">DSIR
+                    27</small><br>Department of Scientific and Industrial Research: Road Research Laboratory Reports
+                </h5>
+                <p class="card-text">See the series level description for more information about this record.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                        <a href="series.html">View series description</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="px-4 py-5" id="hierarchy">
+        <div class="container">
+            <h2 class="font-weight-light">Where is this record in the catalogue?</h2>
+            <p style="margin: 0; display: inline; text-align:right;"><a href="#record-description"
+                                                                        style="float:right; margin-top: 0.3rem; font-family: 'Open Sans', sans-serif; font-size: 0.9rem"><img
+                    src="/static/images/chevron-up-black.svg" alt="" style="margin-right: 0.5rem;">Back to record
+                description</a></p>
+            <div class="level-container">
+                <div class="level-1"><span class="number">3 million</span><span class="label">records</span><span
+                        class="arrow-return-left"></span></div>
+
+                <div class="level-text">
+                    <h3>This record is held at: <a href="">The National Archives</a></h3>
+                    <p>Located at Kew, Surrey</p>
+
+                </div>
+            </div>
+            <div class="level-container">
+                <div class="level-2"><span class="number">200,000</span><span class="label">records</span><span
+                        class="arrow-return-left"></span></div>
+                <div class="level-text">
+                    <h3>In the department: <a href="">DSIR</a></h3>
+                    <p>Records created or inherited by the Department of Scientific and Industrial Research, and related
+                        bodies</p>
+                    <span class="arrow-return-left"></span>
+                </div>
+            </div>
+            <div class="level-container">
+                <div class="level-3"><span class="number">20,000</span><span class="label">records</span><span
+                        class="arrow-return-left"></span></div>
+                <div class="level-text">
+                    <h3>Within the division: <a href="">Division within DSIR</a></h3>
+                    <p>Records of the Road Research Laboratory and Successor</p>
+                    <span class="arrow-return-left"></span>
+                </div>
+            </div>
+            <div class="level-container">
+                <div class="level-4"><span class="number">500</span><span class="label">records</span><span
+                        class="arrow-return-left"></span></div>
+                <div class="level-text">
+                    <h3>Within the series: <a href="">DSIR 27</a></h3>
+                    <p>Department of Scientific and Industrial Research: Road Research Laboratory Reports</p>
+                    <span class="arrow-return-left"></span>
+                </div>
+            </div>
+            <div class="level-container">
+                <div class="level-5"><span class="number">20</span><span class="label">records</span><span
+                        class="arrow-return-left"></span></div>
+                <div class="level-text">
+                    <h3>Within the sub-series: <a href="">Subseries within DSIR 27</a></h3>
+                    <p>REPORTS TO ADMIRALTY</p>
+                    <span class="arrow-return-left"></span>
+                </div>
+            </div>
+            <div class="level-container">
+                <div class="level-6"><span class="number">10</span><span class="label">records</span><span
+                        class="arrow-return-left"></span></div>
+                <div class="level-text">
+                    <h3>Within the piece: <a href="">DSIR 27/6</a></h3>
+                    <p>ADM 157 - 185</p>
+                    <span class="arrow-return-left"></span>
+                </div>
+            </div>
+            <div class="level-container">
+                <div class="level-7 level-current"><span class="number">1</span><span class="label">record</span><span
+                        class="arrow-return-left"></span></div>
+                <div class="level-text">
+                    <h3>You are looking at this item: <a href="">DSIR 27/6/ADM171</a></h3>
+                    <p>The pressures produced by explosions underwater of 1-oz. solid cone charges of P.E. By..</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container" id="page">
+            <h3>What is this record about?</h3>
+            <ul class="topics">
+                <li>Armed forces (General administration)</li>
+                <li>Navy</li>
+                <li>Research</li>
+                <li>Road transport</li>
+            </ul>
+        </div>
+    </section>
     {% block content %}
     {% endblock %}
-    {% include 'includes/fake_footer.html' %}
 </main>
+
+<footer class="text-muted py-5">
+    <div class="container">
+        <p class="float-end mb-1">
+            <a href="#">Back to top</a>
+        </p>
+    </div>
+</footer>
 <script src="{{ url_for('static', filename='scripts/dist/app.js') }}"></script>
 </body>
 </html>
