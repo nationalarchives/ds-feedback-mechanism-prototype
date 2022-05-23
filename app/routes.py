@@ -29,3 +29,13 @@ def process_feedback():
     else:
         return redirect(f'{url_for("home")}?submission=failure#feedback-mechanism-processed-message')
 
+
+@app.route('/get_banner_content')
+def get_banner_content():
+    return {
+        'title': content['ratings_legend'],
+        'rating_labels': content['ratings'],
+        'comment_field_label': content['comment_field_label'],
+        'comment_field_helper_text': content['comment_field_helper_text'],
+        'submit_button_text': content['submit_button_text']
+    }
