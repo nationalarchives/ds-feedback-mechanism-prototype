@@ -2,7 +2,7 @@ from app import app
 from app.content_managed_content.content import content
 from app.forms.server_rendered_form import ServerRenderedForm
 from flask import render_template, request, redirect, url_for
-import random
+import random, time
 
 
 @app.route('/')
@@ -30,8 +30,9 @@ def process_feedback():
         return redirect(f'{url_for("home")}?submission=failure#feedback-mechanism-processed-message')
 
 
-@app.route('/get_banner_content')
+@app.route('/get-banner-content')
 def get_banner_content():
+
     return {
         'title': content['ratings_legend'],
         'rating_labels': content['ratings'],
